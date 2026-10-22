@@ -58,7 +58,7 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="28"/>
+    <Option Name="WTXSimLaunchSim" Val="29"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -264,8 +264,6 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_1/imports/new/contador_bcd_1_seg_tb.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/contador_bcd_1_seg_tb.v"/>
-          <Attr Name="ImportTime" Val="1792635646"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -274,8 +272,6 @@
       <File Path="$PSRCDIR/sim_1/imports/new/barrel_shifter_mux_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/barrel_shifter_mux_tb.v"/>
-          <Attr Name="ImportTime" Val="1792635541"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -284,8 +280,6 @@
       <File Path="$PSRCDIR/sim_1/imports/new/contador_binario_4_bits_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/contador_binario_4_bits_tb.v"/>
-          <Attr Name="ImportTime" Val="1792635664"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -294,8 +288,6 @@
       <File Path="$PSRCDIR/sim_1/imports/new/contador_N_clk_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/contador_N_clk_tb.v"/>
-          <Attr Name="ImportTime" Val="1792635646"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -304,8 +296,6 @@
       <File Path="$PSRCDIR/sim_1/imports/new/contador_binario_4_bits_comportamiento_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/contador_binario_4_bits_comportamiento_tb.v"/>
-          <Attr Name="ImportTime" Val="1792635664"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -314,8 +304,6 @@
       <File Path="$PSRCDIR/sim_1/imports/new/contador_binario_N_bits_estructural_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/contador_binario_N_bits_estructural_tb.v"/>
-          <Attr Name="ImportTime" Val="1792635677"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -324,8 +312,6 @@
       <File Path="$PSRCDIR/sim_1/imports/new/reg_desp_estructural_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/reg_desp_estructural_tb.v"/>
-          <Attr Name="ImportTime" Val="1792635571"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -334,8 +320,6 @@
       <File Path="$PSRCDIR/sim_1/imports/new/contador_bcd_4_digitos_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/contador_bcd_4_digitos_tb.v"/>
-          <Attr Name="ImportTime" Val="1792635646"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -344,8 +328,6 @@
       <File Path="$PSRCDIR/sim_1/imports/new/sum_res_4_bits_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/sum_res_4_bits_tb.v"/>
-          <Attr Name="ImportTime" Val="1792635615"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -354,8 +336,6 @@
       <File Path="$PSRCDIR/sim_1/imports/new/reg_desp_comportamiento_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/reg_desp_comportamiento_tb.v"/>
-          <Attr Name="ImportTime" Val="1792635571"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -364,8 +344,6 @@
       <File Path="$PSRCDIR/sim_1/imports/new/contador_binario_N_bits_comportamiento_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/contador_binario_N_bits_comportamiento_tb.v"/>
-          <Attr Name="ImportTime" Val="1792635677"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -374,8 +352,6 @@
       <File Path="$PSRCDIR/sim_1/imports/new/contador_bcd_comportamiento_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/contador_bcd_comportamiento_tb.v"/>
-          <Attr Name="ImportTime" Val="1792635664"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -384,8 +360,6 @@
       <File Path="$PSRCDIR/sim_1/imports/new/mux_2_a_1_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/mux_2_a_1_tb.v"/>
-          <Attr Name="ImportTime" Val="1792635541"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -394,8 +368,6 @@
       <File Path="$PSRCDIR/sim_1/imports/new/adder_1_bit_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/adder_1_bit_tb.v"/>
-          <Attr Name="ImportTime" Val="1792635209"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -404,8 +376,6 @@
       <File Path="$PSRCDIR/sim_1/imports/new/barrel_shifter_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/barrel_shifter_tb.v"/>
-          <Attr Name="ImportTime" Val="1792635541"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -414,8 +384,6 @@
       <File Path="$PSRCDIR/sim_1/imports/new/contador_bcd_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/contador_bcd_tb.v"/>
-          <Attr Name="ImportTime" Val="1792635664"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -424,8 +392,6 @@
       <File Path="$PSRCDIR/sim_1/imports/new/adder_4_bit_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/adder_4_bit_tb.v"/>
-          <Attr Name="ImportTime" Val="1792635541"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -434,8 +400,6 @@
       <File Path="$PSRCDIR/sim_1/imports/new/ffd_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/ffd_tb.v"/>
-          <Attr Name="ImportTime" Val="1792635599"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -486,9 +450,7 @@
   <Runs Version="1" Minor="22">
     <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xa7s6cpga196-2I" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="true" WriteIncrSynthDcp="false" State="current" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
@@ -497,9 +459,7 @@
     </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xa7s6cpga196-2I" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

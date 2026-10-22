@@ -4,10 +4,10 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="68" Path="C:/Users/nicol/Documents/CESE/MYS/CESE-MYS/Guia_TP/CLP_CESE/CLP_CESE.xpr">
+<Project Product="Vivado" Version="7" Minor="68" Path="C:/Users/nicol/Documents/CESE/MYS/CESE-MYS/Guia_TP/MYS_CESE/MYS_CESE.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="c44dd2e0a7e3414d98069e2d68ad45ab"/>
+    <Option Name="Id" Val="b15ef244388b48d08cc3adedcb4c1ad9"/>
     <Option Name="Part" Val="xa7s6cpga196-2I"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -264,7 +264,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_1/imports/new/contador_bcd_1_seg_tb.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/contador_bcd_1_seg_tb.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/contador_bcd_1_seg_tb.v"/>
           <Attr Name="ImportTime" Val="1792635646"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -274,7 +274,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/barrel_shifter_mux_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/barrel_shifter_mux_tb.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/barrel_shifter_mux_tb.v"/>
           <Attr Name="ImportTime" Val="1792635541"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -284,7 +284,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/contador_binario_4_bits_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/contador_binario_4_bits_tb.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/contador_binario_4_bits_tb.v"/>
           <Attr Name="ImportTime" Val="1792635664"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -294,7 +294,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/contador_N_clk_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/contador_N_clk_tb.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/contador_N_clk_tb.v"/>
           <Attr Name="ImportTime" Val="1792635646"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -304,7 +304,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/contador_binario_4_bits_comportamiento_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/contador_binario_4_bits_comportamiento_tb.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/contador_binario_4_bits_comportamiento_tb.v"/>
           <Attr Name="ImportTime" Val="1792635664"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -314,7 +314,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/contador_binario_N_bits_estructural_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/contador_binario_N_bits_estructural_tb.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/contador_binario_N_bits_estructural_tb.v"/>
           <Attr Name="ImportTime" Val="1792635677"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -324,7 +324,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/reg_desp_estructural_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/reg_desp_estructural_tb.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/reg_desp_estructural_tb.v"/>
           <Attr Name="ImportTime" Val="1792635571"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -334,7 +334,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/contador_bcd_4_digitos_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/contador_bcd_4_digitos_tb.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/contador_bcd_4_digitos_tb.v"/>
           <Attr Name="ImportTime" Val="1792635646"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -344,7 +344,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/sum_res_4_bits_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/sum_res_4_bits_tb.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/sum_res_4_bits_tb.v"/>
           <Attr Name="ImportTime" Val="1792635615"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -354,7 +354,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/reg_desp_comportamiento_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/reg_desp_comportamiento_tb.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/reg_desp_comportamiento_tb.v"/>
           <Attr Name="ImportTime" Val="1792635571"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -364,7 +364,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/contador_binario_N_bits_comportamiento_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/contador_binario_N_bits_comportamiento_tb.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/contador_binario_N_bits_comportamiento_tb.v"/>
           <Attr Name="ImportTime" Val="1792635677"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -374,7 +374,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/contador_bcd_comportamiento_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/contador_bcd_comportamiento_tb.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/contador_bcd_comportamiento_tb.v"/>
           <Attr Name="ImportTime" Val="1792635664"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -384,7 +384,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/mux_2_a_1_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/mux_2_a_1_tb.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/mux_2_a_1_tb.v"/>
           <Attr Name="ImportTime" Val="1792635541"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -394,7 +394,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/adder_1_bit_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/adder_1_bit_tb.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/adder_1_bit_tb.v"/>
           <Attr Name="ImportTime" Val="1792635209"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -404,7 +404,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/barrel_shifter_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/barrel_shifter_tb.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/barrel_shifter_tb.v"/>
           <Attr Name="ImportTime" Val="1792635541"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -414,7 +414,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/contador_bcd_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/contador_bcd_tb.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/contador_bcd_tb.v"/>
           <Attr Name="ImportTime" Val="1792635664"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -424,7 +424,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/adder_4_bit_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/adder_4_bit_tb.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/adder_4_bit_tb.v"/>
           <Attr Name="ImportTime" Val="1792635541"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -434,7 +434,7 @@
       <File Path="$PSRCDIR/sim_1/imports/new/ffd_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/ffd_tb.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../CLP_CESE/CLP_CESE.srcs/sim_1/new/ffd_tb.v"/>
           <Attr Name="ImportTime" Val="1792635599"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

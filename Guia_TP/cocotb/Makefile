@@ -1,7 +1,7 @@
 SIM ?= icarus
 TOPLEVEL_LANG ?= verilog
 
-HDL_DIR := $(abspath ../CLP_CESE/CLP_CESE.srcs/sources_1/new)
+HDL_DIR := $(abspath ../MYS_CESE/MYS_CESE.srcs/sources_1/new)
 
 VERILOG_SOURCES := $(sort $(wildcard $(HDL_DIR)/*.v))
 

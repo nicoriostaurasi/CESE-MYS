@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 ROOT = Path(__file__).resolve().parent
 WAVEFORMS = ROOT / "waveforms"
 OUTPUT = WAVEFORMS / "png"
-SOURCES = ROOT.parent / "CLP_CESE" / "CLP_CESE.srcs" / "sources_1" / "new"
+SOURCES = ROOT.parent / "MYS_CESE" / "MYS_CESE.srcs" / "sources_1" / "new"
 
 
 def module_ports(verilog: Path, module: str) -> dict[str, str]:

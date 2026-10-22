@@ -10,9 +10,9 @@ CASES = [
     ("adder_4_bits", "test_adder_4_bits", ""),
     ("barrel_shifter", "test_barrel_shifter", ""),
     ("barrel_shifter_mux", "test_barrel_shifter_mux", ""),
-    ("contador_n_clk", "test_contador_N_clk", "-gN=5"),
+    ("contador_N_clk", "test_contador_N_clk", "N=5"),
     ("contador_bcd", "test_contador_bcd", ""),
-    ("contador_bcd_1_seg", "test_contador_bcd_1_seg", "-gSYS_CLK=5"),
+    ("contador_bcd_1_seg", "test_contador_bcd_1_seg", "SYS_CLK=5"),
     ("contador_bcd_4_digitos", "test_contador_bcd_4_digitos", ""),
     ("contador_bcd_comportamiento", "test_contador_bcd_comportamiento", ""),
     ("contador_binario_4_bits", "test_contador_binario_4_bits", ""),
@@ -22,14 +22,14 @@ CASES = [
         "",
     ),
     (
-        "contador_binario_n_bits_estructural",
+        "contador_binario_N_bits_estructural",
         "test_contador_binario_N_bits_estructural",
-        "-gN=5",
+        "N=5",
     ),
     (
-        "contador_binario_n_bits_comportamiento",
+        "contador_binario_N_bits_comportamiento",
         "test_contador_binario_N_bits_comportamiento",
-        "-gN=5",
+        "N=5",
     ),
     ("ffd", "test_ffd", ""),
     ("mux_2_a_1", "test_mux_2_a_1", ""),
@@ -49,14 +49,17 @@ def main() -> int:
     results_dir.mkdir(exist_ok=True)
     failures = []
 
-    for top, module, generics in CASES:
+    for top, module, parameters in CASES:
         print(f"\n=== {top} ===", flush=True)
+        # Cada caso se recompila para que los overrides de parametros no
+        # reutilicen un ejecutable construido anteriormente con otros valores.
+        shutil.rmtree(Path("sim_build") / top, ignore_errors=True)
         command = [
             "make",
             "sim",
             f"TOPLEVEL={top}",
             f"MODULE={module}",
-            f"GENERIC_ARGS={generics}",
+            f"PARAMETERS={parameters}",
         ]
         completed = subprocess.run(command, check=False)
         result_file = Path("results.xml")

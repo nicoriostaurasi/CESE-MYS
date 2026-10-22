@@ -3,7 +3,7 @@ FROM debian:bookworm-slim
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         gcc \
-        ghdl \
+        iverilog \
         make \
         python3 \
         python3-dev \

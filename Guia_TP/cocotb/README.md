@@ -45,7 +45,7 @@ Para generar un PNG por cada VCD, mostrando solo las entradas y salidas del
 top level:
 
 ```sh
-python generate_waveform_pngs.py
+docker compose run --rm cocotb python generate_waveform_pngs.py --force
 ```
 
 Las imagenes quedan en `waveforms/png/`.

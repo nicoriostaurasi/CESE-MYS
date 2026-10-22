@@ -1,6 +1,6 @@
 # Ignore all 
 * 
-# Unignore all with extensions *.vhd  *.gitignore *.xpr *.wcfg
+# Versionar fuentes HDL, proyectos, documentación y archivos de verificación.
 !*.vhd 
 !*.v
 !*.xlsx

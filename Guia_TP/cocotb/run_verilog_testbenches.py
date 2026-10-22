@@ -5,7 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 RTL_DIR = ROOT / "Guia_TP/CLP_CESE/CLP_CESE.srcs/sources_1/new"
-TB_DIR = ROOT / "Guia_TP/CLP_CESE/CLP_CESE.srcs/sim_1/new"
+TB_DIR = ROOT / "Guia_TP/CLP_CESE/CLP_CESE.srcs/sim_1/imports/new"
 BUILD_DIR = Path(__file__).resolve().parent / "sim_build/verilog_testbenches"
 
 

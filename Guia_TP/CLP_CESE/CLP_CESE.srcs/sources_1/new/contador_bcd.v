@@ -36,7 +36,7 @@ module contador_bcd(
         .a(q),
         .b(4'h1),
         .s(q_inc),
-        .co(co)
+        .co()
     );
     
     comparador_igual #(.N(4)) comparador_instance(
@@ -44,6 +44,8 @@ module contador_bcd(
         .b(4'h9),
         .igual(igual_9)
     );
+
+    assign co = ena & igual_9;
     
     
     // Cuando el valor actual es 9, el siguiente valor debe ser 0.

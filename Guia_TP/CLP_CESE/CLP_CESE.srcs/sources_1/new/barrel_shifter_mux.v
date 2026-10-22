@@ -26,19 +26,19 @@ module barrel_shifter_mux(
     output [8-1:0] s
     );
 
-    wire[8-1:0] etapa_1, etapa_2, etapa_3;    
-    wire[8-1:0] desp_1, desp_2, desp_3;    
+    wire[8-1:0] etapa_1, etapa_2, etapa_3;
+    wire[8-1:0] desp_1, desp_2, desp_4;
 
     // Desplazamientos fijos armados mediante concatenacion.
     assign desp_1 = {1'h0,a[8-1:1]};
-    assign desp_2 = {2'h0,a[8-1:2]};
-    assign desp_4 = {4'h0,a[8-1:4]};
+    assign desp_2 = {2'h0,etapa_1[8-1:2]};
+    assign desp_4 = {4'h0,etapa_2[8-1:4]};
     
     // Primera etapa: desplaza 0 o 1 posicion.
     genvar i;
     generate
-        for(i=0;i<8;i=i+1) begin : genShifter1
-            mux_2_a_1 uMux (
+        for(i=0;i<8;i=i+1) begin : mux_desp_1
+            mux_2_a_1 mux_instance (
                 .a(a[i]),
                 .b(desp_1[i]),
                 .sel(des[0]),
@@ -50,9 +50,9 @@ module barrel_shifter_mux(
     // Segunda etapa: desplaza 0 o 2 posiciones.
     genvar j;
     generate
-        for(j=0;j<8;j=j+1) begin : genShifter2
-            mux_2_a_1 uMux (
-                .a(a[j]),
+        for(j=0;j<8;j=j+1) begin : mux_desp_2
+            mux_2_a_1 mux_instance (
+                .a(etapa_1[j]),
                 .b(desp_2[j]),
                 .sel(des[1]),
                 .mux(etapa_2[j])
@@ -63,15 +63,16 @@ module barrel_shifter_mux(
     // Tercera etapa: desplaza 0 o 4 posiciones.
     genvar k;
     generate
-        for(k=0;k<8;k=k+1) begin : genShifter3
-            mux_2_a_1 uMux (
-                .a(a[k]),
-                .b(desp_2[k]),
+        for(k=0;k<8;k=k+1) begin : mux_desp_4
+            mux_2_a_1 mux_instance (
+                .a(etapa_2[k]),
+                .b(desp_4[k]),
                 .sel(des[2]),
                 .mux(etapa_3[k])
             );
         end
     endgenerate
 
+    assign s = etapa_3;
 
 endmodule

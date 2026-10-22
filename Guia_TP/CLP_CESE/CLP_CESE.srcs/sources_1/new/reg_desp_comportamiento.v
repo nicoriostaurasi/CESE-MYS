@@ -36,6 +36,6 @@ module reg_desp_comportamiento(
         end
     end
     
-    assign s = q[0];
+    assign S = q[0];
                 
 endmodule

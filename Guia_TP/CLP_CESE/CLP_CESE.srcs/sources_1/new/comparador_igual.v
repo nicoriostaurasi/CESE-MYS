@@ -23,8 +23,8 @@
 module comparador_igual#(
     parameter N = 4
 )(
-    input a,
-    input b,
+    input [N-1:0] a,
+    input [N-1:0] b,
     output igual
     );
     

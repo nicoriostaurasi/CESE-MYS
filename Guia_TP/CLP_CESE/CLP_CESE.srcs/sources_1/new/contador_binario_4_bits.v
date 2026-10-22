@@ -27,7 +27,9 @@ module contador_binario_4_bits(
     output [4-1:0] q
     );
     
-    wire[4-1:0] ena_aux;
+    wire[5-1:0] ena_aux;
+
+    assign ena_aux[0] = ena;
     
     genvar i;
     generate

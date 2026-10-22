@@ -29,6 +29,8 @@ module contador_bcd_1_seg#(
     output [3:0] q
     );
     wire pulso_1s, ena_bcd;
+
+    assign ena_bcd = ena & pulso_1s;
     
     contador_N_clk #(.N(SYS_CLK)) generador_1s_instance(
         .rst(rst),
@@ -41,7 +43,7 @@ module contador_bcd_1_seg#(
         .rst(rst),
         .clk(clk),
         .q(q),
-        .co(open)
+        .co()
     );
     
 

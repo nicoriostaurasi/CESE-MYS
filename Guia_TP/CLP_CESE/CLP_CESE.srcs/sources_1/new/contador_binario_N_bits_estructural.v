@@ -31,6 +31,8 @@ module contador_binario_N_bits_estructural#(
     
     wire [N+1-1:0]ena_aux;
 
+    assign ena_aux[0] = ena;
+
     genvar i;
     generate
         for(i=0;i<N;i=i+1)begin: genCounter

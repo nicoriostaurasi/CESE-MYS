@@ -1,12 +1,11 @@
 # Verificacion con Cocotb
 
-Este entorno verifica el top level VHDL `contador_bcd_1_seg` con Cocotb y GHDL.
+Este entorno verifica los módulos Verilog de la guía con Cocotb e Icarus Verilog.
 El test cubre reset sincrono, habilitacion general, avance cada `N` ciclos,
 rollover BCD de 9 a 0, pausa y reanudacion.
 
 La estructura sigue el enfoque de `CocoTB_FPGA_Verification`: un `Makefile`, un
-testbench Python y un waveform versionado. Para VHDL se utiliza GHDL en lugar de
-Icarus Verilog.
+testbench Python y un waveform versionado.
 
 ## Ejecutar con Docker
 
@@ -21,6 +20,13 @@ Para ejecutar los 18 testbenches Cocotb:
 
 ```sh
 docker compose run --rm cocotb python run_all.py
+```
+
+Para compilar y ejecutar los 18 testbenches Verilog autocontenidos que usa
+Vivado:
+
+```sh
+docker compose run --rm cocotb python run_verilog_testbenches.py
 ```
 
 El valor real del top level es `SYS_CLK=100000000`. La simulacion lo reemplaza

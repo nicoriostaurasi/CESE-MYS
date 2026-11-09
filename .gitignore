@@ -18,6 +18,11 @@
 !*.xdc
 !Makefile
 !Dockerfile
+!*.c
+!*.h
+
+# Metadata y scripts necesarios para reconstruir los IP AXI empaquetados.
+LORA_FPGA_IPS/
 
 # Reporte de utilizacion entregable del proyecto LoRa FPGA.
 !LORA_FPGA/doc/UtilizationReport.txt
@@ -37,3 +42,5 @@ LORA_FPGA/LORA_FPGA.sim/
 
 # Temporary PDF sources and pages rendered for visual verification.
 LORA_FPGA/tmp/pdfs/
+
+LABS/

@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
---Date        : Tue Nov 10 11:05:01 2026
+--Date        : Tue Nov 10 16:20:22 2026
 --Host        : NicoDesktop running 64-bit major release  (build 9200)
 --Command     : generate_target system_wrapper.bd
 --Design      : system_wrapper
@@ -37,7 +37,9 @@ entity system_wrapper is
     spi_miso_i : in STD_LOGIC;
     spi_mosi_o : out STD_LOGIC;
     spi_nss_o : out STD_LOGIC;
-    spi_sclk_o : out STD_LOGIC
+    spi_sclk_o : out STD_LOGIC;
+    sx1278_dio0_i : in STD_LOGIC;
+    sx1278_reset_o : out STD_LOGIC
   );
 end system_wrapper;
 
@@ -68,7 +70,9 @@ architecture STRUCTURE of system_wrapper is
     spi_sclk_o : out STD_LOGIC;
     spi_mosi_o : out STD_LOGIC;
     spi_nss_o : out STD_LOGIC;
-    spi_miso_i : in STD_LOGIC
+    spi_miso_i : in STD_LOGIC;
+    sx1278_reset_o : out STD_LOGIC;
+    sx1278_dio0_i : in STD_LOGIC
   );
   end component system;
 begin
@@ -98,6 +102,8 @@ system_i: component system
       spi_miso_i => spi_miso_i,
       spi_mosi_o => spi_mosi_o,
       spi_nss_o => spi_nss_o,
-      spi_sclk_o => spi_sclk_o
+      spi_sclk_o => spi_sclk_o,
+      sx1278_dio0_i => sx1278_dio0_i,
+      sx1278_reset_o => sx1278_reset_o
     );
 end STRUCTURE;

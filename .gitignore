@@ -62,7 +62,7 @@ LORA_FPGA_IPs_TOP/*.runs/
 LORA_FPGA_IPs_TOP/*.sim/
 LORA_FPGA_IPs_TOP/*.sdk/
 
-# Del workspace SDK solo se versiona la aplicacion monolitica de desarrollo.
+# Del workspace SDK solo se versionan las aplicaciones de desarrollo.
 # BSP, plataforma, metadata y resultados de compilacion son regenerables.
 !LORA_FPGA_IPs_TOP/*.sdk/
 LORA_FPGA_IPs_TOP/*.sdk/*
@@ -71,6 +71,11 @@ LORA_FPGA_IPs_TOP/*.sdk/spi_test_app/*
 !LORA_FPGA_IPs_TOP/*.sdk/spi_test_app/src/
 LORA_FPGA_IPs_TOP/*.sdk/spi_test_app/src/*
 !LORA_FPGA_IPs_TOP/*.sdk/spi_test_app/src/helloworld.c
+!LORA_FPGA_IPs_TOP/*.sdk/lora_sx1278_test_app/
+LORA_FPGA_IPs_TOP/*.sdk/lora_sx1278_test_app/*
+!LORA_FPGA_IPs_TOP/*.sdk/lora_sx1278_test_app/src/
+LORA_FPGA_IPs_TOP/*.sdk/lora_sx1278_test_app/src/*
+!LORA_FPGA_IPs_TOP/*.sdk/lora_sx1278_test_app/src/helloworld.c
 
 # Dentro de .srcs solamente se conserva el Block Design, los wrappers HDL
 # propios y las restricciones. Estas carpetas son copias regenerables del BD.

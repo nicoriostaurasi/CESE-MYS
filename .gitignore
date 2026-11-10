@@ -21,8 +21,15 @@
 !*.c
 !*.h
 
-# Metadata y scripts necesarios para reconstruir los IP AXI empaquetados.
-LORA_FPGA_IPS/
+# El repositorio de IP es fuente del proyecto. Los metadatos de empaquetado
+# permiten volver a incorporar el IP al catalogo de Vivado.
+!LORA_FPGA_IPS/ip_repo/**/component.xml
+!LORA_FPGA_IPS/ip_repo/**/*.tcl
+!LORA_FPGA_IPS/ip_repo/**/*.mdd
+
+# El Block Design es la fuente del proyecto de integracion. El resto de los
+# productos que Vivado deriva de el se ignora mas abajo.
+!LORA_FPGA_IPs_TOP/**/*.bd
 
 # Reporte de utilizacion entregable del proyecto LoRa FPGA.
 !LORA_FPGA/doc/UtilizationReport.txt
@@ -39,6 +46,41 @@ Guia_TP/CLP_CESE/CLP_CESE.sim/
 LORA_FPGA/.Xil/
 LORA_FPGA/LORA_FPGA.runs/
 LORA_FPGA/LORA_FPGA.sim/
+
+# Proyectos auxiliares creados al editar o empaquetar IP. El IP versionable
+# vive exclusivamente debajo de LORA_FPGA_IPS/ip_repo/.
+LORA_FPGA_IPS/managed_ip_project/
+LORA_FPGA_IPS/edit_*.xpr
+LORA_FPGA_IPS/ip_repo/**/example_designs/
+
+# Productos generados por Vivado para el top de integracion.
+LORA_FPGA_IPs_TOP/.Xil/
+LORA_FPGA_IPs_TOP/*.cache/
+LORA_FPGA_IPs_TOP/*.hw/
+LORA_FPGA_IPs_TOP/*.ip_user_files/
+LORA_FPGA_IPs_TOP/*.runs/
+LORA_FPGA_IPs_TOP/*.sim/
+LORA_FPGA_IPs_TOP/*.sdk/
+
+# Del workspace SDK solo se versiona la aplicacion monolitica de desarrollo.
+# BSP, plataforma, metadata y resultados de compilacion son regenerables.
+!LORA_FPGA_IPs_TOP/*.sdk/
+LORA_FPGA_IPs_TOP/*.sdk/*
+!LORA_FPGA_IPs_TOP/*.sdk/spi_test_app/
+LORA_FPGA_IPs_TOP/*.sdk/spi_test_app/*
+!LORA_FPGA_IPs_TOP/*.sdk/spi_test_app/src/
+LORA_FPGA_IPs_TOP/*.sdk/spi_test_app/src/*
+!LORA_FPGA_IPs_TOP/*.sdk/spi_test_app/src/helloworld.c
+
+# Dentro de .srcs solamente se conserva el Block Design, los wrappers HDL
+# propios y las restricciones. Estas carpetas son copias regenerables del BD.
+LORA_FPGA_IPs_TOP/**/*.srcs/**/bd/**/hw_handoff/
+LORA_FPGA_IPs_TOP/**/*.srcs/**/bd/**/ip/
+LORA_FPGA_IPs_TOP/**/*.srcs/**/bd/**/ipshared/
+LORA_FPGA_IPs_TOP/**/*.srcs/**/bd/**/sim/
+LORA_FPGA_IPs_TOP/**/*.srcs/**/bd/**/synth/
+LORA_FPGA_IPs_TOP/**/*.srcs/**/bd/**/ui/
+LORA_FPGA_IPs_TOP/**/*.srcs/**/bd/**/*_ooc.xdc
 
 # Temporary PDF sources and pages rendered for visual verification.
 LORA_FPGA/tmp/pdfs/
